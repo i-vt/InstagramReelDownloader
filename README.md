@@ -4,6 +4,10 @@
 `docker build -t instagram-scraper .`
 ## Run it
 `docker run -p 5000:5000 --name igscraper instagram-scraper`
+
+## Remove
+Also to troubleshoot, you can remove the container and then re-run it `docker rm igscraper` 
+
 ## GUI Preview
 (Reel URL goes into the textbox under the "Instagram Post URL:" label)
 ### Desktop
