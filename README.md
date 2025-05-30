@@ -8,6 +8,9 @@
 ## Remove
 Also to troubleshoot, you can remove the container and then re-run it `docker rm igscraper` 
 
+## Optimizing
+If you feel lucky, you can reduce lag by lowering the values: `time.sleep(random.randint(2000, 4000) / 100)`, specifically the `2000` and the `4000`
+
 ## GUI Preview
 (Reel URL goes into the textbox under the "Instagram Post URL:" label)
 ### Desktop
