@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Video Extractor</title>
+</head>
+<body>
+    <h1>Instagram Video Extractor</h1>
+    <form method="POST">
+        <label>Instagram Post URL:</label><br>
+        <input type="text" name="url" required style="width: 400px;"><br><br>
+        <label>
+            <input type="checkbox" name="download"> Download video
+        </label><br><br>
+        <button type="submit">Extract</button>
+    </form>
+
+    {% if error %}
+        <p style="color:red;">Error: {{ error }}</p>
+    {% endif %}
+
+    {% if video_url %}
+        <h3>Extracted Video URL:</h3>
+        <a href="{{ video_url }}" target="_blank">{{ video_url }}</a><br><br>
+
+        {% if filename %}
+            <a href="{{ url_for('serve_file', filename=filename) }}">Download Video</a>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
