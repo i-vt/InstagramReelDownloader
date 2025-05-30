@@ -1,5 +1,7 @@
 # InstagramReelDownloader
-
+Two options of deploying:
+- Preconfigured Docker (easy & automated)
+- Standalone (manual selenium driver setup required)
 ## Docker
 (preferred method of deployment)
 ###  Build the image
